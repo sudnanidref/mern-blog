@@ -1,0 +1,21 @@
+.detail-blog-wrapper {
+    .image-thumb {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .detail-title {
+        margin-left: auto;
+        font-size: bold;
+    }
+
+    .detail-author {
+        color: grey;
+        font-size: 14px;
+    }
+
+    .detail-content {
+        
+    }
+}

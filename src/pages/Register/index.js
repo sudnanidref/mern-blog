@@ -2,12 +2,14 @@ import React from 'react'
 import './register.scss'
 import { RegisterBg } from '../../assets/images'
 import { Input, Button, Gap, Link } from '../../components'
+import { useHistory } from 'react-router-dom'
 
 const Register = () => {
+    const history = useHistory();
     return (
         <div className="main-page">
             <div className="left">
-                <img src={RegisterBg} className="bg-img"/>
+                <img src={RegisterBg} className="bg-img" />
             </div>
             <div className="right">
                 <p className="title">Form Registser</p>
@@ -18,9 +20,9 @@ const Register = () => {
                 <Gap height={20} />
                 <Input label="password" placeholder="Password" type="password" />
                 <Gap height={30} />
-                <Button title="submit" type="submit"/>
+                <Button title="submit" type="submit" />
                 <Gap height={100} />
-                <Link href="/login" title="Kembali ke Login" />
+                <Link href="/login" title="Kembali ke Login" onClick={() => history.push('/login')} />
             </div>
         </div>
     )

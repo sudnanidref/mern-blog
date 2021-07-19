@@ -1,10 +1,10 @@
 import React from 'react';
 import './link.scss';
 
-const link = ({href, title}) => {
+const link = ({ title, ...rest }) => {
     return (
         <div className="link">
-            <a href={href}>{title}</a>
+            <p {...rest}>{title}</p>
         </div>
     )
 }
